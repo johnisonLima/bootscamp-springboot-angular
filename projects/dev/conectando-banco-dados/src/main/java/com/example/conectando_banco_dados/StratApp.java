@@ -1,5 +1,7 @@
 package com.example.conectando_banco_dados;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -14,6 +16,20 @@ public class StratApp implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        // Override run method 
+        // List<Usuario> usuarios = usuarioRepository.buscarPorNome("john");
+
+        // Query methods
+        List<Usuario> usuarios = usuarioRepository.findByNomeContaining("john");
+
+
+        for (Usuario u : usuarios) {
+            System.out.println(u);
+        }      
+    }
+    
+    @SuppressWarnings("unused")
+    private void inserirUsuario(){
         Usuario usuario = new Usuario();
 
         usuario.setUserName("admin");
@@ -25,7 +41,5 @@ public class StratApp implements CommandLineRunner {
         for (Usuario u : usuarioRepository.findAll()) {
             System.out.println(u);
         }
-
     }
-    
 }
