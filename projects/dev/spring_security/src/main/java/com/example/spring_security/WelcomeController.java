@@ -12,13 +12,13 @@ public class WelcomeController {
     }
 
     @GetMapping("/user")
-    @PreAuthorize("hasAnyRole('USER', 'ADMIN')") // @PreAuthorize: Bloqueia acessos dentro do controller.
+    // @PreAuthorize("hasAnyRole('USER', 'ADMIN')") // @PreAuthorize: Bloqueia acessos dentro do controller.
     public String user() {
         return "Authenticated user!";
     }
 
     @GetMapping("/admin")
-    @PreAuthorize("hasRole('ADMIN')") // @PreAuthorize: Bloqueia acessos dentro do controller.
+    // @PreAuthorize("hasRole('ADMIN')") // @PreAuthorize: Bloqueia acessos dentro do controller.
     public String admin() {
         return "Authenticated admin!";
     }
