@@ -33,8 +33,8 @@ classDiagram
         - String description
     }
 
-    User --> Account
-    User --> Feature : contains
-    User --> Card
-    User --> News : contains
+    User *--> Account
+    User *--> Feature : contains
+    User *--> Card
+    User *--> News : contains
 ```
