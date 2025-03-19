@@ -1,0 +1,25 @@
+{
+    "name": "John",
+    "account": {
+        "accountNumber": "1234567890-0",
+        "accountAgency": "1234-5",    
+        "accountLimit": 500.00,
+        "balance": 1000.00
+    },
+    "features": [
+        {
+            "icon": "",
+            "description": "Descrição da funcionalidade"
+        }
+    ],
+    "card":{
+        "number": "xxxx xxxx xxxx 1234",
+        "limit": 1000.00
+    },
+    "news": [
+        {
+            "icon": "",
+            "description": "Descrição das novidades"
+        }
+    ]
+}
