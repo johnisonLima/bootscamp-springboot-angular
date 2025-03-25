@@ -54,9 +54,27 @@
 
 	<build>
 		<plugins>
+			<!-- Plugin do Spring Boot para empacotar a aplicação -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<mainClass>com.example.santader_dev_week.Application</mainClass>
+				</configuration>
+			</plugin>
+
+			<!-- Plugin para personalizar o Manifest do JAR -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.3.0</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>com.example.santader_dev_week.Application</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
