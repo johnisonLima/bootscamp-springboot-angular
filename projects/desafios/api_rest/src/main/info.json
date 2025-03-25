@@ -1,0 +1,20 @@
+{
+    "user": {
+        "name": "Maria",
+        "email": "maria@email.com"
+    },
+    "tasks": [
+        {
+            "id": "1",
+            "title": "Finalizar relatório",
+            "deadline": "2025-03-30",
+            "status": "pendente"
+        }
+    ],
+    "features": [
+        {
+            "icon": "",
+            "description": "Descrição de funcionalidade de tarefas"
+        }
+    ]
+}
